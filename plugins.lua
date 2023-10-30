@@ -29,6 +29,7 @@ local plugins = {
         "rust-analyzer",
         "typescript-language-server",
         "svelte-language-server",
+        "tailwindcss-language-server",
       },
     },
   },

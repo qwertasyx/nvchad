@@ -3,7 +3,7 @@ local configs = require "plugins.configs.lspconfig"
 local on_attach = configs.on_attach
 local capabilities = configs.capabilities
 
-local servers = { "tsserver", "svelte" }
+local servers = { "tsserver", "svelte","tailwindcss" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {

@@ -1,4 +1,8 @@
 ---@type ChadrcConfig
+
+require('custom.settings')
+
+
 local M = {}
 
 M.ui = {

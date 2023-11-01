@@ -5,14 +5,17 @@ M.disabled = {
   n = {
     ["<leader>n"] = "",
     ["<C-a>"] = "",
+    ["<C-u>"] = "",
+    ["<C-d>"] = "",
   },
 }
-
 -- Your custom mappings
 M.abc = {
   n = {
-    -- ["<C-n>"] = {"<cmd> Telescope <CR>", "Telescope"},
+    ["<C-u>"] = { "<C-u>zz", "Move up" },
+    ["<C-d>"] = { "<C-d>zz", "Move down" },
     ["<C-n>"] = { ":Telescope git_files <CR>", "Telescope Files" },
+    ["<C-k>"] = { ":Telescope live_grep<CR>", "Telescope Live Grep" },
     ["gf"] = {
       function()
         vim.lsp.buf.format { async = true }
